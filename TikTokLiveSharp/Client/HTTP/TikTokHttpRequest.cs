@@ -146,8 +146,8 @@ namespace TikTokLiveSharp.Client.HTTP
                 handler = new HttpClientHandler
                 {
                     AutomaticDecompression = enableCompression ? ~DecompressionMethods.None : DecompressionMethods.None,
-                    Proxy = WebProxy,
-                    UseProxy = WebProxy != null,
+                    // Proxy = WebProxy,
+                    // UseProxy = WebProxy != null,
                     UseCookies = useCookies
                 };
             if (client == null)
